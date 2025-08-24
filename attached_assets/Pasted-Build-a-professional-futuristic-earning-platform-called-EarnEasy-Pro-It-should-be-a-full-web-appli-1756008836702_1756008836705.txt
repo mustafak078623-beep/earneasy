@@ -1,0 +1,70 @@
+Build a professional, futuristic earning platform called EarnEasy Pro. It should be a full web application with separate files and folders (not a single HTML). The structure must be ready for Vercel hosting using React + Vite or another modern frontend setup. The app should include:
+
+Core Features:
+
+Authentication: Email/password sign-up and login using Firebase Authentication, with email verification and password reset.
+
+Database: Use Firebase Firestore. Each user has a document with UID as the ID. Fields: email, name, balance, adsWatched, withdrawnAmount. Subcollection transactions with fields: type (earn/withdraw), amount, timestamp.
+
+Wallet System: Display balance, watch ads to earn money. Withdrawals allowed only when balance ≥ $10. Show withdrawal options: JazzCash, EasyPaisa, NayaPay, SadaPay, Bank Transfer.
+
+Tabs/Pages:
+
+Home: Ads watching section (simulate with placeholders).
+
+Wallet: Show balance, transactions.
+
+Updates: Show updates or “No updates yet”.
+
+Account: Show user details, logout option.
+
+
+Dark/Light Mode: Toggle button to switch themes, theme persists.
+
+Design & Animations: Attractive neon cyber theme with smooth animations. Every button click shows a robot loader animation (a cute CSS/JS animated robot sitting on “Loading…” text). Robot animation also appears while fetching wallet data, updates, or transactions.
+
+Floating WhatsApp Button: Always visible at the bottom-right corner.
+
+Stats Section: Show total withdrawals, total accounts registered, total visitors.
+
+Responsiveness: Fully mobile-friendly and accessible.
+
+
+Technical Requirements:
+
+Project must have clear folder structure:
+
+src/ for React components (Home.jsx, Wallet.jsx, Updates.jsx, Account.jsx, RobotLoader.jsx).
+
+styles/ for CSS or Tailwind configuration.
+
+firebase.js for Firebase initialization.
+
+App.jsx and main.jsx as entry points.
+
+
+package.json with correct dependencies (React, Firebase, Tailwind, Framer Motion for animations).
+
+Deployment-ready with npm run build for Vercel.
+
+Secure Firestore rules (only user can access their own data).
+
+Show robot loader while switching tabs and performing any action (earn, withdraw, update).
+
+
+User Flow:
+
+New user signs up → email verification.
+
+Logs in → lands on Home (ads section).
+
+Navigates to Wallet to see balance and transactions.
+
+Withdraw button shows available methods only if balance ≥ $10.
+
+Updates page shows updates or “No updates yet” with animation.
+
+Account page shows user info and logout.
+
+
+Goal: A futuristic, attractive, international-level website that feels professional, modern, and engaging. The code must be clean, modular, and deployable instantly on Vercel.”
